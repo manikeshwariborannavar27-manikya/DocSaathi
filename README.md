@@ -1,136 +1,82 @@
-# 📄 DocSaathi
+# DocSaathi (डॉक साथी) 🇮🇳
+### Government Document Guidance & Preparation Platform for Indian Citizens
 
-**Government documents, made simple.**
-A privacy-first guide that tells Indian citizens exactly which documents to carry, how to apply, and where the official portal is, *before* they stand in a queue.
-
-> ⚠️ DocSaathi is an independent guidance tool. It is **not** affiliated with, or endorsed by, any government body. Always confirm final requirements on the official portal.
-
-![DocSaathi home screen](docs/screenshots/home.png)
-<img width="1887" height="938" alt="Screenshot 2026-10-22 224358" src="https://github.com/user-attachments/assets/a0e9eb27-1944-42dc-9891-f604990d66f2" />
-<!-- Replace with a real screenshot, or embed your demo: [![Watch the demo](docs/screenshots/home.png)](YOUR_VIDEO_LINK) -->
+DocSaathi is an independent, privacy-first government document guidance and preparation assistant built for everyday citizens across India. It helps citizens understand which documents they need for public services, prepare accepted proofs of identity, address, and age before visiting a Seva Kendra or government office, and discover direct links to verified official application portals.
 
 ---
 
-## ✨ Why DocSaathi?
-
-Most people get turned away from a government office for one boring reason: **a missing photocopy or an unaccepted proof.** DocSaathi removes that guesswork.
-
-**Example:** Renewing a passport?
-
-1. Search "Passport Renewal" (or pick it from *Popular Citizen Needs*).
-2. Open the checklist: Proof of Identity, Proof of Address, Proof of Date of Birth *(Mandatory)*, Old Passport *(If Applicable)*.
-3. Read the step-by-step procedure (fees, appointment booking, biometrics, police verification).
-4. Tap **Go to Official Portal** to land directly on the verified `.gov.in` service.
+## 🌿 Aesthetics & Design Direction (Reference Match)
+- **Palette:** Soothing Mint & Deep Teal (`#0F766E`, `#0D9488`, `#14B8A6`, `#2DD4BF`), Soft Sage / Mint Light (`#E6F7F5`, `#F0FDFA`), Warm Off-White (`#FBFBF9`, `#F8FAF9`, `#FFFFFF`), and subtle Saffron warm accents (`#E07A5F`, `#F59E0B`).
+- **Typography:** Fraunces (Variable Editorial Serif) for trustworthy headings and Inter for crisp, accessible UI readability.
+- **Fluid Organic Shapes:** Soft circular fluid teal backdrop curves matching the reference design.
+- **Accessible & Responsive:** Pill-shaped accessible buttons, clear contrast, and fully responsive layouts for mobile, tablet, and desktop.
 
 ---
 
-## 🚀 Features
+## 🔒 Privacy-First Architecture
 
-| Feature | What it does |
-| --- | --- |
-| **Find by Purpose** | Task-based cards (Passport appointment, Driving Licence & Renewal, Vehicle Registration / RC Transfer, Voter ID enrolment, Income/Caste/Domicile certificates, Ration Card). |
-| **Smart Checklists** | Required proofs grouped as Identity (POI), Address (POA) and Date of Birth, with **Mandatory** and **If Applicable** tags and a tick-off checkbox for each item. |
-| **Step-by-Step Procedures** | Plain-English walkthroughs with fees, timelines and warnings (e.g. never use unofficial touts or third-party agencies). |
-| **Explore Government Documents** | A statutory directory (Aadhaar, PAN, Passport, and more) with category filters such as Identity & KYC, Financial & Tax, Transport & Mobility, Civil & Electoral, Civil & Welfare, Revenue & Welfare. Each entry shows common uses, a carry-list, validity period and official portal. |
-| **Direct Official Links** | Every guide ends with a link to the relevant government portal (UIDAI, Parivahan Sarathi, NSDL/Protean, Election Commission, Passport Seva, etc.). |
-| **Optional Renewal Tracker** | Save expiry dates for documents like Driving Licence, Vehicle Insurance, PUC, Passport, RC Fitness, Health Insurance and Income Certificate, and get clear *Expired* / *X days left* badges. |
-| **Responsive UI** | Clean forest-green design that works on desktop and mobile. |
+- **No Mandatory Login or Account:** Citizens can access all document guides, preparation checklists, and official portal links without registration.
+- **Zero Identity Numbers Collected:** We never ask for your 12-digit Aadhaar number, PAN, voter EPIC number, phone number, date of birth, or home address.
+- **No Document Uploads or Scans:** No document files, scans, certificates, or photos are ever requested or uploaded to our servers.
+- **Optional Client-Side Renewal Tracker:** If you choose to track renewal dates (e.g. driving licence or car insurance), data is stored strictly in your browser’s `localStorage`. Nothing is sent to any server or external cloud.
+- **No Third-Party Tracking:** No personal data is sent to external AI services or advertising trackers.
 
 ---
 
-## 🔒 Privacy by Design
+## 📋 Core Platform Features
 
-- **No sign-up, no login, no profile.**
-- **Zero identity numbers collected.** No Aadhaar, PAN, EPIC, phone number or date of birth is ever requested.
-- **Local-only tracker.** Renewal reminders live in your browser's `localStorage`. Nothing is uploaded or transmitted to a server.
-- **No document uploads.** DocSaathi is purely a reference checklist.
+### 1. Find by Purpose (Citizen Tasks)
+Step-by-step guidance and preparation checklists for 10+ essential citizen services:
+- **Aadhaar Card:** Address Update & Mobile Linking
+- **PAN Card:** Applying for New (Form 49A) / Correction (CSF) / Instant e-PAN
+- **Indian Passport:** Fresh Normal / Tatkaal / Re-issue / Renewal
+- **Driving Licence Services:** Learner's Licence (LL), Permanent DL, and Renewal
+- **Vehicle Registration Services (RC):** Ownership Transfer, Hypothecation Removal, Duplicate RC
+- **Voter ID (EPIC):** New Voter Registration (Form 6), Address Shift (Form 8)
+- **State Revenue Certificates:** Income, Caste (SC/ST/OBC), and Domicile/Residence
+- **Ration Card:** New Family Ration Card & Member Addition
+- **Birth & Death Certificates:** Registration within 21 days & delayed issuance
+- **Ayushman Bharat PM-JAY:** Cashless Health Card up to ₹5 Lakh
+
+### 2. Interactive Preparation Checklist with Print Support
+Citizens can check off items as they gather them at home (Proof of Identity, Proof of Address, Proof of Date of Birth, Photos, Application forms), and click **Print / Save Checklist** to take a physical copy to their local Seva Kendra or cyber cafe.
+
+### 3. Explore Government Documents (Directory)
+Authoritative catalog of Indian statutory documents with plain-English descriptions, common uses, accepted proofs list, validity rules, and issuing authorities.
+
+### 4. Verified Official Government Portals Directory
+Direct links to authorized government portals:
+- **UIDAI MyAadhaar:** `https://myaadhaar.uidai.gov.in`
+- **Parivahan Sarathi:** `https://sarathi.parivahan.gov.in`
+- **Parivahan Vahan:** `https://vahan.parivahan.gov.in`
+- **Passport Seva:** `https://www.passportindia.gov.in`
+- **ECI Voters Portal:** `https://voters.eci.gov.in`
+- **Income Tax e-Filing:** `https://www.incometax.gov.in/iec/foportal/`
+- **NFSA Portal:** `https://nfsa.gov.in`
+- **National Services Portal:** `https://services.india.gov.in`
+- **Civil Registration System (CRS):** `https://crsorgi.gov.in`
+- **DigiLocker:** `https://www.digilocker.gov.in`
+
+### 5. Optional Renewal Tracker (LocalStorage Only)
+A clean personal utility to track upcoming expiries (Driving Licence, Car Insurance, PUC, Passport) without entering any sensitive identity numbers or uploading documents.
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Frontend:** React + Vite
-- **Styling:** Custom CSS (forest green, cream and sage palette)
-- **Storage:** Browser `localStorage` (tracker only)
-- **Content:** Statically curated guidance sourced from official portals and gazettes
-
-<!-- Add or remove lines here to match your final build (e.g. FastAPI / SQLite / Ollama if you ship them). -->
+## ⚖️ Statutory Disclaimer
+DocSaathi is an independent informational guidance tool and is **NOT a government website or an official government service**. We are not affiliated with, authorized, or endorsed by the Government of India or any state government. All official applications must be accessed directly through respective government portals.
 
 ---
 
-## ⚙️ Getting Started
+## 🏃 Running the Project Locally
 
+### 1. Backend (FastAPI)
 ```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/docsaathi.git
-cd docsaathi
+.\venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
+```
+API Documentation: `http://127.0.0.1:8000/docs`
 
-# 2. Install dependencies
-npm install
-
-# 3. Start the dev server
+### 2. Frontend (React + Vite)
+```bash
 npm run dev
 ```
-
-Then open the local URL printed in your terminal (usually `http://localhost:5173`).
-
-To create a production build:
-
-```bash
-npm run build
-npm run preview
-```
-
----
-
-## 🗂️ Project Structure
-
-```text
-docsaathi/
-├── public/
-├── src/
-│   ├── components/     # Navbar, checklist modal, tracker, cards
-│   ├── data/           # Document and procedure content
-│   ├── pages/          # Home, Find by Purpose, Explore, How It Works
-│   └── main.jsx
-├── index.html
-└── package.json
-```
-<!-- Adjust the tree to match your actual folders. -->
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Kannada language support (and more Indian languages after that)
-- [ ] State-specific guidance for more services
-- [ ] Reminder notifications for upcoming expiries
-- [ ] Printable checklists
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome, especially corrections to document requirements and new state-specific guides.
-
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add your feature"`
-4. Push and open a Pull Request
-
-When updating guidance content, please cite the official source in your PR.
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for details.
-
----
-
-## 👩‍💻 Author
-
-**Manikeshwari**
-GitHub: [@your-username](https://github.com/manikeshwariborannavar27-manikya) · LinkedIn: [your-profile](https://linkedin.com/in/manikeshwari-borannavar-7a27123aa)
-
-*Built so that no one is ever turned away from a counter again.*
+Open in browser: `http://localhost:5173/`
