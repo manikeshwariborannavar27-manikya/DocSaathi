@@ -6,6 +6,7 @@ A privacy-first guide that tells Indian citizens exactly which documents to carr
 > ⚠️ DocSaathi is an independent guidance tool. It is **not** affiliated with, or endorsed by, any government body. Always confirm final requirements on the official portal.
 
 ![DocSaathi home screen](docs/screenshots/home.png)
+<img width="1887" height="938" alt="Screenshot 2026-10-22 224358" src="https://github.com/user-attachments/assets/a0e9eb27-1944-42dc-9891-f604990d66f2" />
 <!-- Replace with a real screenshot, or embed your demo: [![Watch the demo](docs/screenshots/home.png)](YOUR_VIDEO_LINK) -->
 
 ---
